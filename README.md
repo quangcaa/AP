@@ -21,4 +21,5 @@ Clicking the mouse on the mode screen will advance to the play screen . To place
 6. Run the executable : **./TicTacToe**
 
 ## Future Improvement
-- 
+- Minimax Algorithm 
+- Alpha beta pruning 

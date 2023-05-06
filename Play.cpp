@@ -101,7 +101,7 @@ void handleVsPlayer(SDL_Event event)
 {
     static Player currentPlayer = Player::X ;
 
-    if(event.type==SDL_QUIT || event.key.keysym.sym==SDL_SCANCODE_ESCAPE)
+    if(event.type==SDL_QUIT || event.key.keysym.scancode==SDL_SCANCODE_ESCAPE)
     {
         running = false ;
     }

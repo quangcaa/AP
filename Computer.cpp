@@ -38,7 +38,7 @@ int score_1(int x , int y , Player player , Player board[][15])
             (board[x][y-2]==Player::None && board[x][y-1]==player && board[x][y]==player && board[x][y+1]==player && board[x][y+2]==Player::None && board[x][y+3]==Player::None) ||
             (board[x][y-3]==Player::None && board[x][y-2]==player && board[x][y-1]==player && board[x][y]==player && board[x][y+1]==Player::None && board[x][y+2]==Player::None))
     {
-        score = 720 ;
+        score = 2000 ;
     }
 
     //(4) --ooo-
@@ -46,7 +46,7 @@ int score_1(int x , int y , Player player , Player board[][15])
             (board[x][y-3]==Player::None && board[x][y-2]==Player::None && board[x][y-1]==player && board[x][y]==player && board[x][y+1]==player && board[x][y+2]==Player::None) ||
             (board[x][y-4]==Player::None && board[x][y-3]==Player::None && board[x][y-2]==player && board[x][y-1]==player && board[x][y]==player && board[x][y+1]==Player::None))
     {
-        score = 720 ;
+        score = 2000 ;
     }
 
     //(5) -oo-o-
@@ -54,7 +54,7 @@ int score_1(int x , int y , Player player , Player board[][15])
             (board[x][y-2]==Player::None && board[x][y-1]==player && board[x][y]==player && board[x][y+1]==Player::None && board[x][y+2]==player && board[x][y+3]==Player::None) ||
             (board[x][y-4]==Player::None && board[x][y-3]==player && board[x][y-2]==player && board[x][y-1]==Player::None && board[x][y]==player && board[x][y+1]==Player::None))
     {
-        score = 720 ;
+        score = 2000 ;
     }
 
     //(6) -o-oo-
@@ -62,7 +62,7 @@ int score_1(int x , int y , Player player , Player board[][15])
             (board[x][y-3]==Player::None && board[x][y-2]==player && board[x][y-1]==Player::None && board[x][y]==player && board[x][y+1]==player && board[x][y+2]==Player::None) ||
             (board[x][y-4]==Player::None && board[x][y-3]==player && board[x][y-2]==Player::None && board[x][y-1]==player && board[x][y]==player && board[x][y+1]==Player::None))
     {
-        score = 720 ;
+        score = 2000 ;
     }
 
     //(7) oooo-
@@ -71,7 +71,7 @@ int score_1(int x , int y , Player player , Player board[][15])
             (board[x][y-2]==player && board[x][y-1]==player && board[x][y]==player && board[x][y+1]==player && board[x][y+2]==Player::None) ||
             (board[x][y-3]==player && board[x][y-2]==player && board[x][y-1]==player && board[x][y]==player && board[x][y+1]==Player::None))
     {
-        score = 720 ;
+        score = 2000 ;
     }
 
     //(8) -oooo
@@ -80,7 +80,7 @@ int score_1(int x , int y , Player player , Player board[][15])
             (board[x][y-3]==Player::None && board[x][y-2]==player && board[x][y-1]==player && board[x][y]==player && board[x][y+1]==player) ||
             (board[x][y-4]==Player::None && board[x][y-3]==player && board[x][y-2]==player && board[x][y-1]==player && board[x][y]==player))
     {
-        score = 720 ;
+        score = 2000 ;
     }
 
     //(9) oo-oo
@@ -89,7 +89,7 @@ int score_1(int x , int y , Player player , Player board[][15])
             (board[x][y-3]==player && board[x][y-2]==player && board[x][y-1]==Player::None && board[x][y]==player && board[x][y+1]==player) ||
             (board[x][y-4]==player && board[x][y-3]==player && board[x][y-2]==Player::None && board[x][y-1]==player && board[x][y]==player))
     {
-        score = 720 ;
+        score = 2000 ;
     }
 
     //(10) o-ooo
@@ -98,7 +98,7 @@ int score_1(int x , int y , Player player , Player board[][15])
             (board[x][y-3]==player && board[x][y-2]==Player::None && board[x][y-1]==player && board[x][y]==player && board[x][y+1]==player) ||
             (board[x][y-4]==player && board[x][y-3]==Player::None && board[x][y-2]==player && board[x][y-1]==player && board[x][y]==player))
     {
-        score = 720 ;
+        score = 2000 ;
     }
 
     //(11) ooo-o
@@ -107,7 +107,7 @@ int score_1(int x , int y , Player player , Player board[][15])
             (board[x][y-2]==player && board[x][y-1]==player && board[x][y]==player && board[x][y+1]==Player::None && board[x][y+2]==player) ||
             (board[x][y-4]==player && board[x][y-3]==player && board[x][y-2]==player && board[x][y-1]==Player::None && board[x][y]==player))
     {
-        score = 720 ;
+        score = 2000 ;
     }
 
     //(12) --oo--
@@ -115,7 +115,7 @@ int score_1(int x , int y , Player player , Player board[][15])
             (board[x][y-3]==Player::None && board[x][y-2]==Player::None && board[x][y-1]==player && board[x][y]==player && board[x][y+1]==Player::None && board[x][y+2]==Player::None))
             
     {
-        score = 120 ;
+        score = 250 ;
     }
 
     //(13) --o-o-
@@ -123,7 +123,7 @@ int score_1(int x , int y , Player player , Player board[][15])
             (board[x][y-4]==Player::None && board[x][y-3]==Player::None && board[x][y-2]==player && board[x][y-1]==Player::None && board[x][y]==player && board[x][y+1]==Player::None))
             
     {
-        score = 120 ;
+        score = 250 ;
     }
 
     //(14) -o-o--
@@ -131,19 +131,19 @@ int score_1(int x , int y , Player player , Player board[][15])
             (board[x][y-3]==Player::None && board[x][y-2]==player && board[x][y-1]==Player::None && board[x][y]==player && board[x][y+1]==Player::None && board[x][y+2]==Player::None))
             
     {
-        score = 120 ;
+        score = 250 ;
     }
 
     //(15) ---o--
     else if((board[x][y-3]==Player::None && board[x][y-2]==Player::None && board[x][y-1]==Player::None && board[x][y]==player && board[x][y+1]==Player::None && board[x][y+2]==Player::None))     
     {
-        score = 20 ;
+        score = 40 ;
     }
 
     //(16) --o---
     else if((board[x][y-2]==Player::None && board[x][y-1]==Player::None && board[x][y]==player && board[x][y+1]==Player::None && board[x][y+2]==Player::None && board[x][y+3]==Player::None))     
     {
-        score = 20 ;
+        score = 40 ;
     }
 
 
@@ -191,7 +191,7 @@ int score_2(int x , int y , Player player , Player board[][15])
             (board[x-2][y]==Player::None && board[x-1][y]==player && board[x][y]==player && board[x+1][y]==player && board[x+2][y]==Player::None && board[x+3][y]==Player::None) ||
             (board[x-3][y]==Player::None && board[x-2][y]==player && board[x-1][y]==player && board[x][y]==player && board[x+1][y]==Player::None && board[x+2][y]==Player::None))
     {
-        score = 720 ;
+        score = 2000 ;
     }
 
     //(4) --ooo-
@@ -199,7 +199,7 @@ int score_2(int x , int y , Player player , Player board[][15])
             (board[x-3][y]==Player::None && board[x-2][y]==Player::None && board[x-1][y]==player && board[x][y]==player && board[x+1][y]==player && board[x+2][y]==Player::None) ||
             (board[x-4][y]==Player::None && board[x-3][y]==Player::None && board[x-2][y]==player && board[x-1][y]==player && board[x][y]==player && board[x+1][y]==Player::None))
     {
-        score = 720 ;
+        score = 2000 ;
     }
 
     //(5) -oo-o-
@@ -207,7 +207,7 @@ int score_2(int x , int y , Player player , Player board[][15])
             (board[x-2][y]==Player::None && board[x-1][y]==player && board[x][y]==player && board[x+1][y]==Player::None && board[x+2][y]==player && board[x+3][y]==Player::None) ||
             (board[x-4][y]==Player::None && board[x-3][y]==player && board[x-2][y]==player && board[x-1][y]==Player::None && board[x][y]==player && board[x+1][y]==Player::None))
     {
-        score = 720 ;
+        score = 2000 ;
     }
 
     //(6) -o-oo-
@@ -215,7 +215,7 @@ int score_2(int x , int y , Player player , Player board[][15])
             (board[x-3][y]==Player::None && board[x-2][y]==player && board[x-1][y]==Player::None && board[x][y]==player && board[x+1][y]==player && board[x+2][y]==Player::None) ||
             (board[x-4][y]==Player::None && board[x-3][y]==player && board[x-2][y]==Player::None && board[x-1][y]==player && board[x][y]==player && board[x+1][y]==Player::None))
     {
-        score = 720 ;
+        score = 2000 ;
     }
 
     //(7) oooo-
@@ -224,7 +224,7 @@ int score_2(int x , int y , Player player , Player board[][15])
             (board[x-2][y]==player && board[x-1][y]==player && board[x][y]==player && board[x+1][y]==player && board[x+2][y]==Player::None) ||
             (board[x-3][y]==player && board[x-2][y]==player && board[x-1][y]==player && board[x][y]==player && board[x+1][y]==Player::None))
     {
-        score = 720 ;
+        score = 2000 ;
     }
 
     //(8) -oooo
@@ -233,7 +233,7 @@ int score_2(int x , int y , Player player , Player board[][15])
             (board[x-3][y]==Player::None && board[x-2][y]==player && board[x-1][y]==player && board[x][y]==player && board[x+1][y]==player) ||
             (board[x-4][y]==Player::None && board[x-3][y]==player && board[x-2][y]==player && board[x-1][y]==player && board[x][y]==player))
     {
-        score = 720 ;
+        score = 2000 ;
     }
 
     //(9) oo-oo
@@ -242,7 +242,7 @@ int score_2(int x , int y , Player player , Player board[][15])
             (board[x-3][y]==player && board[x-2][y]==player && board[x-1][y]==Player::None && board[x][y]==player && board[x+1][y]==player) ||
             (board[x-4][y]==player && board[x-3][y]==player && board[x-2][y]==Player::None && board[x-1][y]==player && board[x][y]==player))
     {
-        score = 720 ;
+        score = 2000 ;
     }
 
     //(10) o-ooo
@@ -251,7 +251,7 @@ int score_2(int x , int y , Player player , Player board[][15])
             (board[x-3][y]==player && board[x-2][y]==Player::None && board[x-1][y]==player && board[x][y]==player && board[x+1][y]==player) ||
             (board[x-4][y]==player && board[x-3][y]==Player::None && board[x-2][y]==player && board[x-1][y]==player && board[x][y]==player))
     {
-        score = 720 ;
+        score = 2000 ;
     }
 
     //(11) ooo-o
@@ -260,7 +260,7 @@ int score_2(int x , int y , Player player , Player board[][15])
             (board[x-2][y]==player && board[x-1][y]==player && board[x][y]==player && board[x+1][y]==Player::None && board[x+2][y]==player) ||
             (board[x-4][y]==player && board[x-3][y]==player && board[x-2][y]==player && board[x-1][y]==Player::None && board[x][y]==player))
     {
-        score = 720 ;
+        score = 2000 ;
     }
 
     //(12) --oo--
@@ -268,7 +268,7 @@ int score_2(int x , int y , Player player , Player board[][15])
             (board[x-3][y]==Player::None && board[x-2][y]==Player::None && board[x-1][y]==player && board[x][y]==player && board[x+1][y]==Player::None && board[x+2][y]==Player::None))
             
     {
-        score = 120 ;
+        score = 250 ;
     }
 
     //(13) --o-o-
@@ -276,7 +276,7 @@ int score_2(int x , int y , Player player , Player board[][15])
             (board[x-4][y]==Player::None && board[x-3][y]==Player::None && board[x-2][y]==player && board[x-1][y]==Player::None && board[x][y]==player && board[x+1][y]==Player::None))
             
     {
-        score = 120 ;
+        score = 250 ;
     }
 
     //(14) -o-o--
@@ -284,19 +284,19 @@ int score_2(int x , int y , Player player , Player board[][15])
             (board[x-3][y]==Player::None && board[x-2][y]==player && board[x-1][y]==Player::None && board[x][y]==player && board[x+1][y]==Player::None && board[x+2][y]==Player::None))
             
     {
-        score = 120 ;
+        score = 250 ;
     }
 
     //(15) ---o--
     else if((board[x-3][y]==Player::None && board[x-2][y]==Player::None && board[x-1][y]==Player::None && board[x][y]==player && board[x+1][y]==Player::None && board[x+2][y]==Player::None))     
     {
-        score = 20 ;
+        score = 40 ;
     }
 
     //(16) --o---
     else if((board[x-2][y]==Player::None && board[x-1][y]==Player::None && board[x][y]==player && board[x+1][y]==Player::None && board[x+2][y]==Player::None && board[x+3][y]==Player::None))     
     {
-        score = 20 ;
+        score = 40 ;
     }
 
 
@@ -344,7 +344,7 @@ int score_3(int x , int y , Player player , Player board[][15])
             (board[x-2][y-2]==Player::None && board[x-1][y-1]==player && board[x][y]==player && board[x+1][y+1]==player && board[x+2][y+2]==Player::None && board[x+3][y+3]==Player::None) ||
             (board[x-3][y-3]==Player::None && board[x-2][y-2]==player && board[x-1][y-1]==player && board[x][y]==player && board[x+1][y+1]==Player::None && board[x+2][y+2]==Player::None))
     {
-        score = 720 ;
+        score = 2000 ;
     }
 
     //(4) --ooo-
@@ -352,7 +352,7 @@ int score_3(int x , int y , Player player , Player board[][15])
             (board[x-3][y-3]==Player::None && board[x-2][y-2]==Player::None && board[x-1][y-1]==player && board[x][y]==player && board[x+1][y+1]==player && board[x+2][y+2]==Player::None) ||
             (board[x-4][y-4]==Player::None && board[x-3][y-3]==Player::None && board[x-2][y-2]==player && board[x-1][y-1]==player && board[x][y]==player && board[x+1][y+1]==Player::None))
     {
-        score = 720 ;
+        score = 2000 ;
     }
 
     //(5) -oo-o-
@@ -360,7 +360,7 @@ int score_3(int x , int y , Player player , Player board[][15])
             (board[x-2][y-2]==Player::None && board[x-1][y-1]==player && board[x][y]==player && board[x+1][y+1]==Player::None && board[x+2][y+2]==player && board[x+3][y+3]==Player::None) ||
             (board[x-4][y-4]==Player::None && board[x-3][y-3]==player && board[x-2][y-2]==player && board[x-1][y-1]==Player::None && board[x][y]==player && board[x+1][y+1]==Player::None))
     {
-        score = 720 ;
+        score = 2000 ;
     }
 
     //(6) -o-oo-
@@ -368,7 +368,7 @@ int score_3(int x , int y , Player player , Player board[][15])
             (board[x-3][y-3]==Player::None && board[x-2][y-2]==player && board[x-1][y-1]==Player::None && board[x][y]==player && board[x+1][y+1]==player && board[x+2][y+2]==Player::None) ||
             (board[x-4][y-4]==Player::None && board[x-3][y-3]==player && board[x-2][y-2]==Player::None && board[x-1][y-1]==player && board[x][y]==player && board[x+1][y+1]==Player::None))
     {
-        score = 720 ;
+        score = 2000 ;
     }
 
     //(7) oooo-
@@ -377,7 +377,7 @@ int score_3(int x , int y , Player player , Player board[][15])
             (board[x-2][y-2]==player && board[x-1][y-1]==player && board[x][y]==player && board[x+1][y+1]==player && board[x+2][y+2]==Player::None) ||
             (board[x-3][y-3]==player && board[x-2][y-2]==player && board[x-1][y-1]==player && board[x][y]==player && board[x+1][y+1]==Player::None))
     {
-        score = 720 ;
+        score = 2000 ;
     }
 
     //(8) -oooo
@@ -386,7 +386,7 @@ int score_3(int x , int y , Player player , Player board[][15])
             (board[x-3][y-3]==Player::None && board[x-2][y-2]==player && board[x-1][y-1]==player && board[x][y]==player && board[x+1][y+1]==player) ||
             (board[x-4][y-4]==Player::None && board[x-3][y-3]==player && board[x-2][y-2]==player && board[x-1][y-1]==player && board[x][y]==player))
     {
-        score = 720 ;
+        score = 2000 ;
     }
 
     //(9) oo-oo
@@ -395,7 +395,7 @@ int score_3(int x , int y , Player player , Player board[][15])
             (board[x-3][y-3]==player && board[x-2][y-2]==player && board[x-1][y-1]==Player::None && board[x][y]==player && board[x+1][y+1]==player) ||
             (board[x-4][y-4]==player && board[x-3][y-3]==player && board[x-2][y-2]==Player::None && board[x-1][y-1]==player && board[x][y]==player))
     {
-        score = 720 ;
+        score = 2000 ;
     }
 
     //(10) o-ooo
@@ -404,7 +404,7 @@ int score_3(int x , int y , Player player , Player board[][15])
             (board[x-3][y-3]==player && board[x-2][y-2]==Player::None && board[x-1][y-1]==player && board[x][y]==player && board[x+1][y+1]==player) ||
             (board[x-4][y-4]==player && board[x-3][y-3]==Player::None && board[x-2][y-2]==player && board[x-1][y-1]==player && board[x][y]==player))
     {
-        score = 720 ;
+        score = 2000 ;
     }
 
     //(11) ooo-o
@@ -413,7 +413,7 @@ int score_3(int x , int y , Player player , Player board[][15])
             (board[x-2][y-2]==player && board[x-1][y-1]==player && board[x][y]==player && board[x+1][y+1]==Player::None && board[x+2][y+2]==player) ||
             (board[x-4][y-4]==player && board[x-3][y-3]==player && board[x-2][y-2]==player && board[x-1][y-1]==Player::None && board[x][y]==player))
     {
-        score = 720 ;
+        score = 2000 ;
     }
 
     //(12) --oo--
@@ -421,7 +421,7 @@ int score_3(int x , int y , Player player , Player board[][15])
             (board[x-3][y-3]==Player::None && board[x-2][y-2]==Player::None && board[x-1][y-1]==player && board[x][y]==player && board[x+1][y+1]==Player::None && board[x+2][y+2]==Player::None))
             
     {
-        score = 120 ;
+        score = 250 ;
     }
 
     //(13) --o-o-
@@ -429,7 +429,7 @@ int score_3(int x , int y , Player player , Player board[][15])
             (board[x-4][y-4]==Player::None && board[x-3][y-3]==Player::None && board[x-2][y-2]==player && board[x-1][y-1]==Player::None && board[x][y]==player && board[x+1][y+1]==Player::None))
             
     {
-        score = 120 ;
+        score = 250 ;
     }
 
     //(14) -o-o--
@@ -437,19 +437,19 @@ int score_3(int x , int y , Player player , Player board[][15])
             (board[x-3][y-3]==Player::None && board[x-2][y-2]==player && board[x-1][y-1]==Player::None && board[x][y]==player && board[x+1][y+1]==Player::None && board[x+2][y+2]==Player::None))
             
     {
-        score = 120 ;
+        score = 250 ;
     }
 
     //(15) ---o--
     else if((board[x-3][y-3]==Player::None && board[x-2][y-2]==Player::None && board[x-1][y-1]==Player::None && board[x][y]==player && board[x+1][y+1]==Player::None && board[x+2][y+2]==Player::None))     
     {
-        score = 20 ;
+        score = 40 ;
     }
 
     //(16) --o---
     else if((board[x-2][y-2]==Player::None && board[x-1][y-1]==Player::None && board[x][y]==player && board[x+1][y+1]==Player::None && board[x+2][y+2]==Player::None && board[x+3][y+3]==Player::None))     
     {
-        score = 20 ;
+        score = 40 ;
     }
 
 
@@ -497,7 +497,7 @@ int score_4(int x , int y , Player player , Player board[][15])
             (board[x-2][y+2]==Player::None && board[x-1][y+1]==player && board[x][y]==player && board[x+1][y-1]==player && board[x+2][y-2]==Player::None && board[x+3][y-3]==Player::None) ||
             (board[x-3][y+3]==Player::None && board[x-2][y+2]==player && board[x-1][y+1]==player && board[x][y]==player && board[x+1][y-1]==Player::None && board[x+2][y-2]==Player::None))
     {
-        score = 720 ;
+        score = 2000 ;
     }
 
     //(4) --ooo-
@@ -505,7 +505,7 @@ int score_4(int x , int y , Player player , Player board[][15])
             (board[x-3][y+3]==Player::None && board[x-2][y+2]==Player::None && board[x-1][y+1]==player && board[x][y]==player && board[x+1][y-1]==player && board[x+2][y-2]==Player::None) ||
             (board[x-4][y+4]==Player::None && board[x-3][y+3]==Player::None && board[x-2][y+2]==player && board[x-1][y+1]==player && board[x][y]==player && board[x+1][y-1]==Player::None))
     {
-        score = 720 ;
+        score = 2000 ;
     }
 
     //(5) -oo-o-
@@ -513,7 +513,7 @@ int score_4(int x , int y , Player player , Player board[][15])
             (board[x-2][y+2]==Player::None && board[x-1][y+1]==player && board[x][y]==player && board[x+1][y-1]==Player::None && board[x+2][y-2]==player && board[x+3][y-3]==Player::None) ||
             (board[x-4][y+4]==Player::None && board[x-3][y+3]==player && board[x-2][y+2]==player && board[x-1][y+1]==Player::None && board[x][y]==player && board[x+1][y-1]==Player::None))
     {
-        score = 720 ;
+        score = 2000 ;
     }
 
     //(6) -o-oo-
@@ -521,7 +521,7 @@ int score_4(int x , int y , Player player , Player board[][15])
             (board[x-3][y+3]==Player::None && board[x-2][y+2]==player && board[x-1][y+1]==Player::None && board[x][y]==player && board[x+1][y-1]==player && board[x+2][y-2]==Player::None) ||
             (board[x-4][y+4]==Player::None && board[x-3][y+3]==player && board[x-2][y+2]==Player::None && board[x-1][y+1]==player && board[x][y]==player && board[x+1][y-1]==Player::None))
     {
-        score = 720 ;
+        score = 2000 ;
     }
 
     //(7) oooo-
@@ -530,7 +530,7 @@ int score_4(int x , int y , Player player , Player board[][15])
             (board[x-2][y+2]==player && board[x-1][y+1]==player && board[x][y]==player && board[x+1][y-1]==player && board[x+2][y-2]==Player::None) ||
             (board[x-3][y+3]==player && board[x-2][y+2]==player && board[x-1][y+1]==player && board[x][y]==player && board[x+1][y-1]==Player::None))
     {
-        score = 720 ;
+        score = 2000 ;
     }
 
     //(8) -oooo
@@ -539,7 +539,7 @@ int score_4(int x , int y , Player player , Player board[][15])
             (board[x-3][y+3]==Player::None && board[x-2][y+2]==player && board[x-1][y+1]==player && board[x][y]==player && board[x+1][y-1]==player) ||
             (board[x-4][y+4]==Player::None && board[x-3][y+3]==player && board[x-2][y+2]==player && board[x-1][y+1]==player && board[x][y]==player))
     {
-        score = 720 ;
+        score = 2000 ;
     }
 
     //(9) oo-oo
@@ -548,7 +548,7 @@ int score_4(int x , int y , Player player , Player board[][15])
             (board[x-3][y+3]==player && board[x-2][y+2]==player && board[x-1][y+1]==Player::None && board[x][y]==player && board[x+1][y-1]==player) ||
             (board[x-4][y+4]==player && board[x-3][y+3]==player && board[x-2][y+2]==Player::None && board[x-1][y+1]==player && board[x][y]==player))
     {
-        score = 720 ;
+        score = 2000 ;
     }
 
     //(10) o-ooo
@@ -557,7 +557,7 @@ int score_4(int x , int y , Player player , Player board[][15])
             (board[x-3][y+3]==player && board[x-2][y+2]==Player::None && board[x-1][y+1]==player && board[x][y]==player && board[x+1][y-1]==player) ||
             (board[x-4][y+4]==player && board[x-3][y+3]==Player::None && board[x-2][y+2]==player && board[x-1][y+1]==player && board[x][y]==player))
     {
-        score = 720 ;
+        score = 2000 ;
     }
 
     //(11) ooo-o
@@ -566,7 +566,7 @@ int score_4(int x , int y , Player player , Player board[][15])
             (board[x-2][y+2]==player && board[x-1][y+1]==player && board[x][y]==player && board[x+1][y-1]==Player::None && board[x+2][y-2]==player) ||
             (board[x-4][y+4]==player && board[x-3][y+3]==player && board[x-2][y+2]==player && board[x-1][y+1]==Player::None && board[x][y]==player))
     {
-        score = 720 ;
+        score = 2000 ;
     }
 
     //(12) --oo--
@@ -574,7 +574,7 @@ int score_4(int x , int y , Player player , Player board[][15])
             (board[x-3][y+3]==Player::None && board[x-2][y+2]==Player::None && board[x-1][y+1]==player && board[x][y]==player && board[x+1][y-1]==Player::None && board[x+2][y-2]==Player::None))
             
     {
-        score = 120 ;
+        score = 250 ;
     }
 
     //(13) --o-o-
@@ -582,7 +582,7 @@ int score_4(int x , int y , Player player , Player board[][15])
             (board[x-4][y+4]==Player::None && board[x-3][y+3]==Player::None && board[x-2][y+2]==player && board[x-1][y+1]==Player::None && board[x][y]==player && board[x+1][y-1]==Player::None))
             
     {
-        score = 120 ;
+        score = 250 ;
     }
 
     //(14) -o-o--
@@ -590,19 +590,19 @@ int score_4(int x , int y , Player player , Player board[][15])
             (board[x-3][y+3]==Player::None && board[x-2][y+2]==player && board[x-1][y+1]==Player::None && board[x][y]==player && board[x+1][y-1]==Player::None && board[x+2][y-2]==Player::None))
             
     {
-        score = 120 ;
+        score = 250 ;
     }
 
     //(15) ---o--
     else if((board[x-3][y+3]==Player::None && board[x-2][y+2]==Player::None && board[x-1][y+1]==Player::None && board[x][y]==player && board[x+1][y-1]==Player::None && board[x+2][y-2]==Player::None))     
     {
-        score = 20 ;
+        score = 40 ;
     }
 
     //(16) --o---
     else if((board[x-2][y+2]==Player::None && board[x-1][y+1]==Player::None && board[x][y]==player && board[x+1][y-1]==Player::None && board[x+2][y-2]==Player::None && board[x+3][y-3]==Player::None))     
     {
-        score = 20 ;
+        score = 40 ;
     }
 
 
@@ -649,7 +649,7 @@ void best_move(Player board[][15])
     int iO = 0 , jO = 0 , maxO = 0 ; //stand for attack mode
     int iX = 0 , jX = 0 , maxX = 0 ; //stand for defend mode
 
-    cout << "O score :\n" ;
+    // cout << "O score :\n" ;
 
     for(int i=0 ; i<BOARD_SIZE ; i++)
     {
@@ -667,18 +667,18 @@ void best_move(Player board[][15])
                     iO = i ;
                     jO = j ;
                     
-                    int sscore_1 = score_1(i , j , Player::O , board) ;
-                    int sscore_2 = score_2(i , j , Player::O , board) ;
-                    int sscore_3 = score_3(i , j , Player::O , board) ;
-                    int sscore_4 = score_4(i , j , Player::O , board) ;
-                    cout << "row:" << jO << " col:" << iO << " score: " << maxO << " : " << sscore_1 << " " << sscore_2 << " " << sscore_3 << " " << sscore_4 << endl ;
+                    // int sscore_1 = score_1(i , j , Player::O , board) ;
+                    // int sscore_2 = score_2(i , j , Player::O , board) ;
+                    // int sscore_3 = score_3(i , j , Player::O , board) ;
+                    // int sscore_4 = score_4(i , j , Player::O , board) ;
+                    // cout << "row:" << jO << " col:" << iO << " score: " << maxO << " : " << sscore_1 << " " << sscore_2 << " " << sscore_3 << " " << sscore_4 << endl ;
                 }
             }
         }
     }
 
-    cout << endl ;
-    cout << "X score:\n" ;
+    // cout << endl ;
+    // cout << "X score:\n" ;
 
     for(int i=0 ; i<BOARD_SIZE ; i++)
     {
@@ -696,17 +696,16 @@ void best_move(Player board[][15])
                     iX = i ;
                     jX = j ;
 
-                    int sscore_1 = score_1(i , j , Player::X , board) ;
-                    int sscore_2 = score_2(i , j , Player::X , board) ;
-                    int sscore_3 = score_3(i , j , Player::X , board) ;
-                    int sscore_4 = score_4(i , j , Player::X , board) ;
-                    cout << "row:" << jX << " col:" << iX << " score: " << maxX << " : " << sscore_1 << " " << sscore_2 << " " << sscore_3 << " " << sscore_4 << endl ;
+                    // int sscore_1 = score_1(i , j , Player::X , board) ;
+                    // int sscore_2 = score_2(i , j , Player::X , board) ;
+                    // int sscore_3 = score_3(i , j , Player::X , board) ;
+                    // int sscore_4 = score_4(i , j , Player::X , board) ;
+                    // cout << "row:" << jX << " col:" << iX << " score: " << maxX << " : " << sscore_1 << " " << sscore_2 << " " << sscore_3 << " " << sscore_4 << endl ;
                 }
             }
         }
     }
-    cout << endl;
-
+    //cout << endl ;
 
     if(maxO >= maxX)
     {
